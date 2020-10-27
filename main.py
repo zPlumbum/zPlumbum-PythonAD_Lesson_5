@@ -25,12 +25,12 @@ for i, item in enumerate(contacts_list):
 contacts_list_edited = []
 individual_person_list = []
 duplicate_list = []
-for i, person in enumerate(contacts_list):
+for person in contacts_list:
     last_name = person[0]
     first_name = person[1]
     initials = (last_name, first_name)
 
-    for j, individual_person in enumerate(contacts_list):
+    for individual_person in contacts_list:
         if (individual_person[0] == last_name) and (individual_person[1] == first_name) and ((individual_person[0], individual_person[1]) not in duplicate_list):
             individual_person_list.append(individual_person)
 
