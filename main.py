@@ -6,8 +6,6 @@ import re
 with open("phonebook_raw.csv", 'r', encoding='utf-8') as f:
     rows = csv.reader(f, delimiter=",")
     contacts_list = list(rows)
-pprint(contacts_list)
-print('\n\n')
 
 FIO = []
 for i, item in enumerate(contacts_list):
